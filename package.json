@@ -1,0 +1,21 @@
+{
+  "name": "oompa-loompa",
+  "version": "0.0.1",
+  "description": "Lazy loader",
+  "main": "index.js",
+  "repository": "git@github.com:jouni-kantola/oompa-loompa.git",
+  "author": "Jouni Kantola <jouni@kantola.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "browser-env": "^2.0.19"
+  },
+  "scripts": {
+    "test": "ava test/*.js"
+  },
+  "ava": {
+    "require": [
+      "./test/utils/fake-browser.js"
+    ]
+  }
+}
